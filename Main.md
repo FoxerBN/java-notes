@@ -32,7 +32,45 @@
 - *[[Constructors examples#7. Builder pattern constructor]]*
 - *[[Constructors examples#8. Immutable object constructor]]*
 
+## ~={pink} Generics
+
+[[Generics]] 
+   Generiká ti umožnia pracovať s rôznymi dátovými typmi bez potreby opakovaného písania toho istého kódu. Typ sa určí až pri používaní triedy alebo metódy, vďaka čomu:
+
+- **nemusíš ručne pretypovávať hodnoty**
+    
+- **vyhneš sa runtime chybám typu ClassCastException**
+    
+- **získaš čitateľnejší a bezpečnejší kód**
+    
+
+### ✅ Príklad:
+
+```java
+Box<String> stringBox = new Box<>();
+stringBox.set("Ahoj");
+String s = stringBox.get(); // netreba žiadne pretypovanie
+```
 
 
 
+## ~={pink} Arrays,Maps
+
+
+
+## ~={pink} Streams
+
+### Most-used operations (cheat-sheet)
+[https://www.youtube.com/watch?v=FWoYpM-E3EQ]()
+[https://www.youtube.com/watch?v=2StXP1XaU04]()
+
+* [[Java Streams Examples#^Filter|filter(Predicate<T>)]]
+* [[Java Streams Examples#^Map|map(Function<T,R>)]]
+* [[Java Streams Examples#^FlatMap|flatMap(Function<T, Stream<R>>)]]
+* [[Java Streams Examples#^Collect|collect(Collectors.toList())]]
+* [[Java Streams Examples#^Reduce|reduce(identity, BinaryOperator)]]
+* [[Java Streams Examples#^Sorted|sorted(Comparator)]]
+* [[Java Streams Examples#^Distinct|distinct()]]
+* [[Java Streams Examples#^Limit-Skip|limit() / skip()]]
+* [[Java Streams Examples#^Match|anyMatch() / allMatch() / noneMatch()]]
 
