@@ -56,6 +56,11 @@ String s = stringBox.get(); // netreba žiadne pretypovanie
 
 ## ~={pink} Arrays,Maps
 
+- ArrayList
+	- _Resizable array under the hood._
+
+	- **When to reach for it:** random reads are ⚡ O(1), inserts at the end are amortised O(1).
+	- **Avoid it for:** tons of inserts/removes in the middle (shifts hurt).
 
 
 ## ~={pink} Streams
